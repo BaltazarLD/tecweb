@@ -38,13 +38,55 @@
             $a = "ManejadorSQL";
             $b = 'MySQL';
             $c = &$a;
-            
-            echo '<br>';
+
             echo 'La variable $a: '.$a;
             echo '<br>';
             echo 'La variable $b: '.$b;
             echo '<br>';
             echo 'La variable $c: '.$c;
+            
+            echo '<br>';
+            echo '<br>';
+
+            $a = "PHP server";
+            echo '<br>';
+            echo 'La nueva variable $a: '.$a;
+            echo '<br>';
+            echo 'La nueva variable $b: '.$b;
+            echo '<br>';
+            
+
+            echo 'La variable $a fue reasignada después de ser impresa por primera vez, <br>
+            lo cual hizo que su valor impreso por segunda sea diferente. Así mismo, la variavle $b que hace referencia a $a cambia'
+        ?>
+
+        <h2>Ejercicio 3</h2>
+        <p>Muestra el contenido de cada variable inmediatamente después de asignación verificar la evolución del tipo de estas variables <br></p>
+
+        <p>
+            $a = “PHP5”; <br>
+            $z[] = &$a; <br>
+            $b = “5a version de PHP”; <br>
+            $c = $b*10; <br>
+            $a .= $b; <br>
+            $b *= $c; <br>
+            $z[0] = “MySQL”; <br>
+        </p>
+        <?php
+            $a = "PHP5";
+            echo 'La variable $a asignada por primera vez: '.$a;
+            echo '<br>';
+            $z[] = &$a;
+            var_dump ($z);
+            echo '<br>';
+            $b = "5a version de PHP"; 
+            echo 'La variable $b= '.$b;
+            echo '<br>';
+            @$c = $b*10;  
+            @$a .= $b;  
+            @$b *= $c;  
+            $z[0] = "MySQL";
+            var_dump($z);
         ?>
     </body>
 </html>
