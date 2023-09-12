@@ -8,7 +8,7 @@
     </head>
 
     <body>
-        <h2>Ejericicio 1</h2>
+        <h2>Ejercicio 1</h2>
         <p>Determina cuáles de las sieguiente variables son válidas y explica por qué: </p>
         <p>$_myvar, $_7var, myvar, $myvar, $var7, $_element1, $house*5</p>
         <?php
@@ -76,17 +76,42 @@
             $a = "PHP5";
             echo 'La variable $a asignada por primera vez: '.$a;
             echo '<br>';
+            echo 'La primera asignación de el array: ';
             $z[] = &$a;
             var_dump ($z);
             echo '<br>';
             $b = "5a version de PHP"; 
             echo 'La variable $b= '.$b;
             echo '<br>';
-            @$c = $b*10;  
-            @$a .= $b;  
-            @$b *= $c;  
+            @$c = $b*10;
+            echo 'impresion de C: '.$c;  
+            $a .= $b;  
+            $b *= $c;  
             $z[0] = "MySQL";
+            echo 'La segunda asignación de el array: ';
             var_dump($z);
+        ?>
+         <h2>Ejercicio 4</h2>
+         <p>Lee y muestra los valores de las variables del ejercicio    anterior, pero ahora con la ayuda de
+            la matriz $GLOBALS o del modificador global de PHP.</p>
+        
+        <?php
+
+        ?>
+
+        <h2>Ejercicio 5</h2>
+        <p>Dar el valor de las variables $a, $b, $c al final del siguiente script: <br></p>
+        <?php
+            $a = "7 personas";
+            $b = (integer) $a;
+            $a = "9E3";
+            $c = (double) $a;
+
+            echo 'El valor final de $a es: '.$a;
+            echo '<br>';
+            echo 'El valor final de $bs es: '.$b;
+            echo '<br>';
+            echo 'El valor final de $c es: '.$c;
         ?>
     </body>
 </html>
