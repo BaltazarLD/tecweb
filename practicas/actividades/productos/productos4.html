@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda en Línea</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+header {
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+h2{
+    color: #fffbfb;
+    margin-left: 50%;
+        text-align: left;
+}
+p{
+         color: white;
+        margin-left: 50%;
+        text-align: left;
+    }
+.producto {
+    display: flex; 
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}
+
+.imagen {
+    flex: 1; 
+}
+
+.imagen img {
+    max-width: 100%;
+    border: 1px solid #ddd;
+}
+
+.descripcion {
+    flex: 2; 
+    padding: 20px;
+}
+
+.descripcion h2 {
+    font-size: 24px;
+}
+
+.precio {
+    font-weight: bold;
+    color: #e44d26;
+}
+
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+</style>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Carrito</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="producto">
+            <div class="imagen">
+                <img src="/tecweb/practicas/actividades/01-la_web_estatica/fotos proyecto/newBalance_gris.jpg" alt="Producto 4">
+            </div>
+            <div class="descripcion">
+                <h2>Tenis New Balance 550</h2>
+                <p>Beneficios New Balance
+                    Estos tenis, diseñados por la marca de Boston, New Balance, traen la esencia actual de libertad y expresión para elevar cada conjunto. 
+                    Su recubrimiento sintético con malla y gamuza en los talones aportan la mejor estética de street style. Estos sneakers están hechos 
+                    con suela de goma para pisadas suaves y amortiguadas en paseos largos.
+                    </p>
+                <p class="precio">$3,500</p>
+                <button>Añadir al Carrito</button>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Tecnologias web</p>
+    </footer>
+</body>
+</html>
