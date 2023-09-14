@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+
+/*CSS Reset*/
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: 'Poppins', sans-serif;
+
+}
+
+/*Navegacion*/
+
+header {
+    width: 100%;
+    height: 50vh;
+     background-image: url(/tecweb/practicas/actividades/01-la_web_estatica/fotosproyecto/background.jpg);
+    background-color: rgb(0, 0, 0);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+
+}
+
+nav {
+
+    height: 100px;
+    max-width: 1200px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo {
+    width: 80px;
+    margin-left: 0px;
+}
+
+.bar-btn {
+    font-size: 25px;
+    color: #ffff;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.nav-menu {
+    position: fixed;
+    width: 100%;
+    height: 0vh;
+    top: 100px;
+    background: rgba(60, 60, 60, 0.95);
+    text-align: center;
+    transition: all 0.5s;
+
+}
+
+.nav-menu li {
+    display: none;
+    line-height: 30px;
+    margin: 50px 0;
+    transition: all 0.5s;
+
+}
+
+.nav-menu li a{
+
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.nav-menu li a.active,
+.nav-menu li a:hover{
+    color: #d9ff00;
+    transition: 0.3s;
+}
+
+#check {
+    display: none;
+}
+
+#check:checked ~ .nav-menu {
+    height: 100vh;
+}
+
+#check:checked ~ .nav-menu{
+    display: block;
+}
+
+.banner-text h1 {
+    color: #fff;
+    font-size: 40px;
+    text-transform: uppercase;
+
+}
+
+.banner-text p {
+    color: #fff;
+    font-size: 18px;
+    padding: 30px;
+
+}
+
+.btn-a {
+    display: inline-block;
+    background-color: #9900ff;
+    margin-top: 30px;
+    padding: 15px 30px;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 25px; 
+
+}
+
+.btn-a:hover {
+    background-color: #6803ab;
+}
+
+@media (min-width:768px) {
+    .logo {
+        margin-left: 10;
+    }
+
+    header {
+        height: 100vh;
+    }
+
+    nav {
+       height: 100px;
+       margin: 0 auto; 
+    }
+
+    .bar-btn {
+        display: none;
+    }
+
+    .nav-menu {
+        position: relative;
+        height: 100px;
+        top: 0;
+        background: none;
+        transition: none;
+        text-align: right;
+        margin-right: 50px;
+
+    }
+
+    .nav-menu li {
+        display: inline-block;
+        line-height: 100px;
+        margin: 0 20px;
+        transition: none;
+    }
+
+    .nav-menu li a {
+        font-size: 18px;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+
+    }
+
+    .banner-text {
+        padding-top: 250px;
+    }
+
+    .banner-text h1 {
+        font-size: 55px;
+    }
+
+    .banner-text p {
+        padding: 30px 200px;
+    }
+}
