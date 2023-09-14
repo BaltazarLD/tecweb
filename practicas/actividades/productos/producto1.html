@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda en Línea</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    /* margin: 0;
+    padding: 0; */
+    background-color: #000000;
+}
+
+header {
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+@media (min-width:78px){
+    .logo{
+        margin-left: 10;
+    }
+}
+
+.logo{
+    width: 80px;
+    margin-left: 0px;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+h2{
+    color: #fffbfb;
+    margin-left: 50%;
+        text-align: left;
+}
+p{
+         color: white;
+        margin-left: 50%;
+        text-align: left;
+    }
+.producto {
+    display: flex; 
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}
+
+.imagen {
+    flex: 1; 
+}
+
+.imagen img {
+    max-width: 100%;
+    border: 1px solid #ddd;
+}
+
+.descripcion {
+    flex: 2; 
+    padding: 20px;
+}
+
+.descripcion h2 {
+    font-size: 24px;
+}
+
+.precio {
+    font-weight: bold;
+    color: #e44d26;
+}
+
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+</style>
+<body>
+    <header>
+        <div>
+            <img src="/tecweb/practicas/actividades/01-la_web_estatica/fotos proyecto/logo.jpg" alt="logo" class="logo">
+        </div>
+        <nav>
+           
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ACERCA DE</a></li>
+                <li><a href="#">TIENDA</a></li>
+                <li><a href="#">AYUDA</a></li>
+                <li><a href="#">TU CARRITO</a></li>
+            </ul>
+        </nav> 
+    </header>
+
+    <main>
+       
+<section class="producto">
+            <div class="imagen">
+                <img src="/tecweb/practicas/actividades/01-la_web_estatica/fotos proyecto/jordan1.jpg" alt="Producto 2">
+            </div>
+            <div class="descripcion">
+                <h2>Air Jordan 1 high OG</h2>
+                <p>Endulza tu look con esta confección suave. Como una reinvención del primer calzado exitoso de MJ, el AJ1 "Praline" combina 
+                    cuero premium con una pizca de encanto. Con solo tocar esas agujetas de lujo, suaves como el caramelo, querrás más. Adelante, date un gusto.
+                    
+                    .</p>
+                <p class="precio">$5,500</p>
+                <button>Añadir al Carrito</button>
+            </div>
+        </section> 
+
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Tecnologias web</p>
+    </footer>
+</body>
+</html>
