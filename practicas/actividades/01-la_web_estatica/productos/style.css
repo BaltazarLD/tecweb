@@ -22,7 +22,7 @@ body {
 header {
     width: 100%;
     height: 50vh;
-    background-image: url(/practicas/actividades/01-la_web_estatica/fotosproyecto/background.jpg);
+    background-image: url(/01-la_web_estatica/fotosproyecto/background.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
