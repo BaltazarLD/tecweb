@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda en Línea</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+header {
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+h2{
+    color: #fffbfb;
+    margin-left: 50%;
+        text-align: left;
+}
+p{
+         color: white;
+        margin-left: 50%;
+        text-align: left;
+    }
+.producto {
+    display: flex; 
+    margin-bottom: 20px;
+}
+
+.imagen {
+    flex: 1; 
+}
+
+.imagen img {
+    max-width: 100%;
+}
+
+.descripcion {
+    flex: 2; 
+    padding: 20px;
+}
+
+.descripcion h2 {
+    font-size: 24px;
+}
+
+.precio {
+    font-weight: bold;
+    color: #e44d26;
+}
+
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+</style>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Carrito</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="producto">
+            <div class="imagen">
+                <img src="/tecweb/practicas/actividades/01-la_web_estatica/fotos proyecto/af1_azul.jpg" alt="Producto 3">
+            </div>
+            <div class="descripcion">
+                <h2>Nike SB Dunk Retro Laser Blue </h2>
+                <p>Un color vibrante para tu look
+                    Luce una esencia actual, divertida y vibrante con estos Tenis Nike Dunk High Retro Laser Blue, diseñados para darte un estilo único con su combinación de azul Laser y blanco. Amarás su comodidad y versatilidad para jugar con tus outfits.
+                    
+                    Anatomía de los sneakers Nike Dunk High Retro Laser Blue
+                    Este calzado color blanco, diseñado por Nike, está construido con materiales sintéticos super resistentes. Su suela de goma aporta una excelente tracción y cuidado a tu pie.
+                    </p>
+                <p class="precio">$2,800</p>
+                <button>Añadir al Carrito</button>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Tecnologias web</p>
+    </footer>
+</body>
+</html>
